@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
     <link rel="stylesheet" href="app.css">
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,10 +14,9 @@
         </h1>
         <div class="display">
             <input type="text" id="password" placeholder="Password">
-            <img src="images/copy.png">
+            <img src="images/copy.png" onclick="copyPassword()">
         </div>
-        <button><img src="images/copy.png">Generate Password</button>
+        <button id="btn"><img src="images/generate.png">Generate Password</button>
     </div>
-    
 </body>
 </html>
